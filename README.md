@@ -1,25 +1,4 @@
 
-# 🦠 Infectious Disease in Nigeria
-
-## 📚 Table of Contents
-- [Overview](#overview)
-- [Aim](#aim)
-- [Dataset Description](#dataset-description)
-- [Data Analysis and Visualization](#data-analysis-and-visualization)
-  - [1. Disease Distribution by State](#1-disease-distribution-by-state)
-  - [2. Disease Distribution by Settlement](#2-disease-distribution-by-settlement)
-  - [3. Disease Trends by Year](#3-disease-trends-by-year)
-  - [4. Overall Disease Proportions](#4-overall-disease-proportions)
-  - [5. Disease Distribution by Gender](#5-disease-distribution-by-gender)
-  - [6. Disease Distribution by Age](#6-disease-distribution-by-age)
-  - [7. Serotype Distribution](#7-serotype-distribution)
-- [Key Findings](#key-findings)
-- [Conclusion](#conclusion)
-- [Recommendations and Next Steps](#recommendations-and-next-steps)
-- [Tools and Libraries](#tools-and-libraries)
-
----
-
 ## Overview
 
 Infectious diseases remain one of the major public health challenges in Nigeria, affecting people across all age groups and regions.  
@@ -58,50 +37,43 @@ Each record includes:
 
 ## Data Analysis and Visualization
 
-### 1. Disease Distribution by State
+### 1. Age Group Distribution
+This visualization shows the age group distribution of the dataset.
+
+### 2. Disease Distribution by State
 This visualization shows the total number of patients per disease across Nigerian states.  
 It highlights regional hotspots and areas with the highest disease burden.
 
-![Disease Distribution by State](images/disease_by_state.png)
+![Disease Distribution by State](images/bar-chart.png)
 
 ---
 
-### 2. Disease Distribution by Settlement
+### 3. Disease Distribution by Settlement
 This chart compares disease occurrence between **rural** and **urban** areas, helping identify community-level differences in infection patterns.
 
-![Disease Distribution by Settlement](images/disease_by_settlement.png)
 
 ---
 
-### 3. Disease Trends by Year
+### 4. Disease Trends by Year
 Yearly distribution of disease cases across states, showing how the number of reported cases changes over time.
 
-![Disease Trends by Year](images/disease_by_year.png)
 
 ---
 
-### 4. Overall Disease Proportions
+### 5. Overall Disease Proportions
 A pie chart displaying the proportion of each disease among all reported cases.  
 It clearly shows that **cholera** and **diarrhoea** dominate reported infections.
 
-![Overall Disease Proportions](images/disease_pie_chart.png)
+![Overall Disease Proportions](images/pie-chart.png)
+
 
 ---
 
-### 5. Disease Distribution by Gender
-Two visualizations compare disease cases and outcomes (alive/dead) between male and female patients.  
-This helps reveal potential gender-based trends in infection or mortality.
-
-![Disease by Gender](images/disease_by_gender.png)
-![Health Status by Gender](images/health_status_by_gender.png)
-
----
-
-### 6. Disease Distribution by Age
+### 7. Disease Distribution by Age
 These charts and scatter plots show how disease frequency and survival outcomes vary across age groups, offering insights into which diseases affect children or adults more severely.
 
-![Disease by Age](images/disease_by_age.png)
-![Age vs Disease Scatter Plot](images/age_disease_scatter.png)
+
+![Age vs Disease Scatter Plot](images/scatter-plot.png)
 
 ---
 
@@ -110,7 +82,6 @@ This analysis focuses on the **serotype** variable.
 Since only meningitis had valid serotype data (all others were null), the chart displays meningitis serotypes and their patient counts.  
 It provides insight into the most frequently occurring strains.
 
-![Serotype Distribution](images/serotype_distribution.png)
 
 ---
 
@@ -153,18 +124,17 @@ The findings provide a foundation for targeted public health strategies and impr
 
 ## Tools and Libraries
 
-- **Python 3**  
+- **Python**  
 - **Pandas** – Data cleaning and manipulation  
-- **Plotly Express** – Interactive visualization  
 - **Matplotlib** & **Seaborn** – Static and comparative plotting  
 - **Jupyter Notebook** – Development and presentation environment  
 
 ---
 
-📊 **Notebook File:**  
+**Notebook File:**  
 [`Infectious Disease In Nigeria Project.ipynb`](./Infectious%20Disease%20In%20Nigeria%20Project.ipynb)
 
-📁 **Dataset:**  
+*Dataset:**  
 [`meningitis_dataset.csv`](./meningitis_dataset.csv)
 
 
